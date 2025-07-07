@@ -6,9 +6,9 @@ import Divider from "./assets/img/Divider.png";
 import Design from "./assets/Icons/icons8-design-64.png";
 import Development from "./assets/Icons/icons8-development-64.png";
 import Maintenance from "./assets/Icons/icons8-laptop-settings-50.png";
-import Iconhtml from "./assets/Icons/icons8-html5-48.png";
-import Iconcss from "./assets/Icons/icons8-css-48.png";
-import Iconjs from "./assets/Icons/icons8-javascript-48.png";
+import Iconhtml from "./assets/Icons/HTML.png";
+import Iconcss from "./assets/Icons/CSS.png";
+import Iconjs from "./assets/Icons/JavaScript.png";
 import Iconreact from "./assets/Icons/icons8-react-24.png";
 import Iconnode from "./assets/Icons/icons8-nodejs-48.png";
 import Icongit from "./assets/Icons/icons8-git-48.png";
@@ -68,7 +68,7 @@ function Portfolio() {
         <div className="container">
           <div className="explore">
             <div className="Explore-Header">
-              <h3>Explore</h3>
+              <h1>Explore</h1>
             </div>
             <div className="Explore-items-Holder">
               <div className="Design Relative Explore-items">
