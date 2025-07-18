@@ -9,7 +9,7 @@
 
 body {
   font-family: "proxima-nova";
-  font-size: large;
+  font-size: medium;
 }
 .flex {
   display: flex;
@@ -241,45 +241,97 @@ p {
   /* flex-direction: column; */
   justify-content: center;
   background-color: rgb(201, 201, 201);
-  padding: 50px 0;
   text-align: center;
-  padding: 30px 0;
+  padding: 50px 0;
 }
-.Skills-header{
+.Skills-header {
   border-right: solid 3px black;
   border-left: solid black 3px;
   width: fit-content;
+  margin: 30px auto;
   text-align: center;
-  margin: auto;
 }
 .Skills-header h1 {
   padding: 0 20px;
 }
 .Skills-holder {
   flex-direction: column;
-align-items: start;
+  align-items: start;
 }
-.Using-header{
+.Using,
+.Learning,
+.Other-skills {
+  width: 100%;
+  margin: 50px 0;
+}
+.Using-header,
+.Learning-header,
+.Other-header {
   width: 80%;
-  margin: 20px auto;
+  margin: 0 auto 50px auto;
+  font-weight: bold;
 }
-.Using-header h1{
-text-align: left;
+.Using-header h1,
+.Learning-header h1,
+.Other-header h1 {
+  text-align: left;
 }
-.Using-item{
+.Using-item,
+.Learning-item,
+.Other-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 33%;
+  margin: 20px 0;
 }
-.Using-icons{
+.Using-icons,
+.Learning-icons,
+.Other-icons {
   display: flex;
   flex-wrap: wrap;
-  width: 60%;
-  justify-content: space-between;
-  margin: 50px auto;
-
+  justify-content: left;
+  margin: 0 auto;
+  /* margin: 50px auto; */
 }
-.Using-icon{
+.Using-icon,
+.Learning-icon,
+.Other-icon {
   height: 100px;
+}
+.Portfolio {
+  padding: 0;
+  min-height: calc(100vh - 100px);
+}
+.Portfolio-header {
+  width: 100%;
+  height: 50vh;
+  background-image: url(./assets/img/dried-leaves-gray-blank-background.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Portfolio-title-holder {
+  height: 100%;
+  align-content: center;
+}
+.Portfolio-title {
+  text-align: center;
+  border: solid black 5px;
+  padding: 5px 50px;
+  margin: auto auto;
+  width: fit-content;
+}
+.Portfolio-items{
+  flex-wrap: wrap;
+  gap: 0;
+  flex: 1;
+}
+.Portfolio-item{
+  width: 33%;
+}
+.Portfolio-item img{
+  width: 100%;
 }

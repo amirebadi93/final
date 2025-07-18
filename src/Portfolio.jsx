@@ -13,6 +13,16 @@ import Iconreact from "./assets/Icons/icons8-react-24.png";
 import Iconnode from "./assets/Icons/icons8-nodejs-48.png";
 import Icongit from "./assets/Icons/icons8-git-48.png";
 import Iconfig from "./assets/Icons/icons8-figma-48.png";
+import Iconblend from "./assets/Icons/icons8-microsoft-blend-240.png";
+import Iconbootstrap from "./assets/Icons/icons8-bootstrap-240.png";
+import Iconenglish from "./assets/Icons/icons8-english-96.png";
+import IconMicrosoft from "./assets/Icons/icons8-microsoft-240.png";
+import Iconcrm from "./assets/Icons/icons8-microsoft-dynamics-365-240.png";
+import Iconvm from "./assets/Icons/icons8-vmware-100.png";
+import Iconnetwork from "./assets/Icons/icons8-networking-manager-94.png";
+import Iconvoip from "./assets/Icons/icons8-voip-100.png";
+import Aboutbackgoround from "./assets/img/dried-leaves-gray-blank-background.jpg";
+import Itemport1 from "./assets/img/screenshot-1752267044170.png"
 
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { library } from "@fortawesome/fontawesome-svg-core";
@@ -20,8 +30,7 @@ import Iconfig from "./assets/Icons/icons8-figma-48.png";
 // library.add(fas);
 
 function Portfolio() {
-  return (
-    <div>
+  return <div>
       <div>
         <Header />
       </div>
@@ -55,9 +64,9 @@ function Portfolio() {
           <p className="About-me-text">
             Recently diving into front-end development, I've built a solid
             foundation in HTML, CSS, React, and Vite—driven by genuine passion
-            and curiosity. Through inspiring projects and continuous learning, I
-            aim to bring creativity, reliability, and positive energy to every
-            collaboration.
+            and curiosity. Through inspiring projects and continuous learning,
+            I aim to bring creativity, reliability, and positive energy to
+            every collaboration.
           </p>
         </div>
         <div className="container">
@@ -78,8 +87,8 @@ function Portfolio() {
                 <h1 className="Explore-header">Design</h1>
                 <p className="Explore-text">
                   I design sleek, responsive websites with a focus on clean
-                  visuals and user-friendly layouts. Every element is crafted to
-                  be both functional and visually engaging.
+                  visuals and user-friendly layouts. Every element is crafted
+                  to be both functional and visually engaging.
                 </p>
               </div>
               <div className="Development Relative Explore-items">
@@ -88,9 +97,9 @@ function Portfolio() {
                 </div>
                 <h1 className="Explore-header">Development</h1>
                 <p className="Explore-text">
-                  I'm skilled in front-end development and web design, blending
-                  clean code with sleek UI/UX to craft responsive, modern, and
-                  user-focused digital experiences.
+                  I'm skilled in front-end development and web design,
+                  blending clean code with sleek UI/UX to craft responsive,
+                  modern, and user-focused digital experiences.
                 </p>
               </div>
             </div>
@@ -100,9 +109,9 @@ function Portfolio() {
               </div>
               <h1 className="Explore-header">Maintenance</h1>
               <p className="Explore-text">
-                I'm proficient in front-end and web design maintenance, ensuring
-                smooth updates, optimal UI/UX, bug fixes, and site performance
-                for seamless user experiences
+                I'm proficient in front-end and web design maintenance,
+                ensuring smooth updates, optimal UI/UX, bug fixes, and site
+                performance for seamless user experiences
               </p>
             </div>
           </div>
@@ -131,13 +140,105 @@ function Portfolio() {
                   <img src={Iconjs} alt="JavaScript" className="Using-icon" />
                   <span>JavaScript</span>
                 </div>
+                <div className="Using-item">
+                  <img src={Iconreact} alt="JavaScript" className="Using-icon" />
+                  <span>React</span>
+                </div>
+                <div className="Using-item">
+                  <img src={Icongit} alt="JavaScript" className="Using-icon" />
+                  <span>Git</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="Learning">
+              <div className="Learning-header">
+                <h1>LEARNING:</h1>
+              </div>
+              <div className="Learning-icons flex">
+                <div className="Learning-item">
+                  <img src={Iconnode} alt="HTML" className="Learning-icon" />
+                  <span>NodeJS</span>
+                </div>
+                <div className="Learning-item">
+                  <img src={Iconfig} alt="CSS" className="Learning-icon" />
+                  <span>Figma</span>
+                </div>
+                <div className="Learning-item">
+                  <img src={Iconblend} alt="CSS" className="Learning-icon" />
+                  <span>Microsoft Blend</span>
+                </div>
+                <div className="Learning-item">
+                  <img src={Iconbootstrap} alt="CSS" className="Learning-icon" />
+                  <span>Bottstrap</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="Other-skills">
+              <div className="Other-header">
+                <h1>OTHER SKILLS:</h1>
+              </div>
+              <div className="Other-icons flex">
+                <div className="Other-item">
+                  <img src={Iconenglish} alt="HTML" className="Other-icon" />
+                  <span>English</span>
+                </div>
+                <div className="Other-item">
+                  <img src={IconMicrosoft} alt="CSS" className="Other-icon" />
+                  <span>MCSE</span>
+                </div>
+                <div className="Other-item">
+                  <img src={Iconcrm} alt="CSS" className="Other-icon" />
+                  <span>Microsoft Dynamic</span>
+                </div>
+                <div className="Other-item">
+                  <img src={Iconvm} alt="CSS" className="Other-icon" />
+                  <span>VMware</span>
+                </div>
+                <div className="Other-item">
+                  <img src={Iconnetwork} alt="CSS" className="Other-icon" />
+                  <span>Networking</span>
+                </div>
+                <div className="Other-item">
+                  <img src={Iconvoip} alt="CSS" className="Other-icon" />
+                  <span>Issabel VOIP</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  );
+      <div className="Portfolio">
+        <div className="Portfolio-header">
+          <div className="Portfolio-title-holder">
+            <div className="Portfolio-title">
+              <h1>PORTFOLIO</h1>
+            </div>
+          </div>
+        </div>
+        <div className="Portfolio-items flex">
+          <div className="Portfolio-item">
+            <img src={Itemport1} alt="" />
+          </div>
+          <div className="Portfolio-item">
+            <img src={Itemport1} alt="" />
+          </div>
+          <div className="Portfolio-item">
+            <img src={Itemport1} alt="" />
+          </div>
+          <div className="Portfolio-item">
+            <img src={Itemport1} alt="" />
+          </div>
+          <div className="Portfolio-item">
+            <img src={Itemport1} alt="" />
+          </div>
+          <div className="Portfolio-item">
+            <img src={Itemport1} alt="" />
+          </div>
+        </div>
+      </div>
+    </div>;
 }
 
 export default Portfolio;
