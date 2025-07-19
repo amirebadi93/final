@@ -22,15 +22,16 @@ import Iconvm from "./assets/Icons/icons8-vmware-100.png";
 import Iconnetwork from "./assets/Icons/icons8-networking-manager-94.png";
 import Iconvoip from "./assets/Icons/icons8-voip-100.png";
 import Aboutbackgoround from "./assets/img/dried-leaves-gray-blank-background.jpg";
-import Itemport1 from "./assets/img/screenshot-1752267044170.png"
+import Itemport1 from "./assets/img/screenshot-1752267044170.png";
+import Itemport2 from "./assets/img/port2.png";
+import Itemport3 from "./assets/img/port3.png";
 
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { library } from "@fortawesome/fontawesome-svg-core";
-// import { fas } from "@fortawesome/free-solid-svg-icons";
-// library.add(fas);
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 function Portfolio() {
-  return <div>
+  return (
+    <div>
       <div>
         <Header />
       </div>
@@ -64,9 +65,9 @@ function Portfolio() {
           <p className="About-me-text">
             Recently diving into front-end development, I've built a solid
             foundation in HTML, CSS, React, and Vite—driven by genuine passion
-            and curiosity. Through inspiring projects and continuous learning,
-            I aim to bring creativity, reliability, and positive energy to
-            every collaboration.
+            and curiosity. Through inspiring projects and continuous learning, I
+            aim to bring creativity, reliability, and positive energy to every
+            collaboration.
           </p>
         </div>
         <div className="container">
@@ -87,8 +88,8 @@ function Portfolio() {
                 <h1 className="Explore-header">Design</h1>
                 <p className="Explore-text">
                   I design sleek, responsive websites with a focus on clean
-                  visuals and user-friendly layouts. Every element is crafted
-                  to be both functional and visually engaging.
+                  visuals and user-friendly layouts. Every element is crafted to
+                  be both functional and visually engaging.
                 </p>
               </div>
               <div className="Development Relative Explore-items">
@@ -97,9 +98,9 @@ function Portfolio() {
                 </div>
                 <h1 className="Explore-header">Development</h1>
                 <p className="Explore-text">
-                  I'm skilled in front-end development and web design,
-                  blending clean code with sleek UI/UX to craft responsive,
-                  modern, and user-focused digital experiences.
+                  I'm skilled in front-end development and web design, blending
+                  clean code with sleek UI/UX to craft responsive, modern, and
+                  user-focused digital experiences.
                 </p>
               </div>
             </div>
@@ -109,9 +110,9 @@ function Portfolio() {
               </div>
               <h1 className="Explore-header">Maintenance</h1>
               <p className="Explore-text">
-                I'm proficient in front-end and web design maintenance,
-                ensuring smooth updates, optimal UI/UX, bug fixes, and site
-                performance for seamless user experiences
+                I'm proficient in front-end and web design maintenance, ensuring
+                smooth updates, optimal UI/UX, bug fixes, and site performance
+                for seamless user experiences
               </p>
             </div>
           </div>
@@ -141,7 +142,11 @@ function Portfolio() {
                   <span>JavaScript</span>
                 </div>
                 <div className="Using-item">
-                  <img src={Iconreact} alt="JavaScript" className="Using-icon" />
+                  <img
+                    src={Iconreact}
+                    alt="JavaScript"
+                    className="Using-icon"
+                  />
                   <span>React</span>
                 </div>
                 <div className="Using-item">
@@ -169,7 +174,11 @@ function Portfolio() {
                   <span>Microsoft Blend</span>
                 </div>
                 <div className="Learning-item">
-                  <img src={Iconbootstrap} alt="CSS" className="Learning-icon" />
+                  <img
+                    src={Iconbootstrap}
+                    alt="CSS"
+                    className="Learning-icon"
+                  />
                   <span>Bottstrap</span>
                 </div>
               </div>
@@ -217,28 +226,85 @@ function Portfolio() {
             </div>
           </div>
         </div>
+        <div className="port-header-text">
+          <h1>WEB DESIGNS</h1>
+        </div>
         <div className="Portfolio-items flex">
-          <div className="Portfolio-item">
+          <div className="Portfolio-item port1">
             <img src={Itemport1} alt="" />
           </div>
-          <div className="Portfolio-item">
-            <img src={Itemport1} alt="" />
+          <div className="Portfolio-item port2">
+            <img src={Itemport2} alt="" />
           </div>
-          <div className="Portfolio-item">
-            <img src={Itemport1} alt="" />
-          </div>
-          <div className="Portfolio-item">
-            <img src={Itemport1} alt="" />
-          </div>
-          <div className="Portfolio-item">
-            <img src={Itemport1} alt="" />
-          </div>
-          <div className="Portfolio-item">
-            <img src={Itemport1} alt="" />
+          <div className="Portfolio-item port3">
+            <img src={Itemport3} alt="" />
           </div>
         </div>
       </div>
-    </div>;
+      <div className="port-footer">
+        <h1>And many more to come!</h1>
+      </div>
+      <div className="contact-holder">
+        <div className="container">
+          <div className="contact flex">
+            <div className="contact-header">
+              <div className="contact-title-holder">
+                <div className="contact-title">
+                  <h1>Contact</h1>
+                </div>
+                <div className="contact-text">
+                  <p>
+                    fill the form below and send your message. <br />
+                    I will get back to you as soon as possible!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <form action="" className="contact-form">
+              <input
+                type="text"
+                name="Name"
+                id="Name"
+                placeholder="Enter your name"
+              />
+              <input
+                type="email"
+                name="Email"
+                id="Email"
+                placeholder="Enter your Email"
+              />
+              <input
+                type="tel"
+                name="Phone"
+                id="Phone"
+                placeholder="Enter your phone number"
+              />
+              <textarea
+                name="Message"
+                id="Message"
+                placeholder="Enter your message"
+              />
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div className="footer">
+        <div className="footer-items">
+          <div className="footer-item">
+            <FontAwesomeIcon className="" icon={faChevronUp} />
+            <br />
+            <a href="#top" className="back-to-top">
+              BACK TO TOP
+            </a>
+          </div>
+          <p className="footer-item">
+            © 2025 Amirhossein Ebadi ALL RIGHTS RESERVED
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Portfolio;
